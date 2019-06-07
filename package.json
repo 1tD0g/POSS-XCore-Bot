@@ -1,0 +1,32 @@
+{
+  "name": "poss-xcore-bot",
+  "version": "1.0.0",
+  "description": "Telegram Bot for interacting PolyU POSS Gym Booking System using Selenium.",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "node-telegram-bot-api": "^0.30.0",
+    "request": "^2.88.0",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1tD0g/POSS-XCore-Bot.git"
+  },
+  "keywords": [
+    "PolyU",
+    "POSS",
+    "Telegram"
+  ],
+  "author": "1tD0g",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1tD0g/POSS-XCore-Bot/issues"
+  },
+  "homepage": "https://github.com/1tD0g/POSS-XCore-Bot#readme"
+}

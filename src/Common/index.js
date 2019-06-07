@@ -13,6 +13,10 @@ function isWebsiteReady(driver) {
     return new Promise(async resolve => resolve(await driver.executeScript("return document.readyState") == "complete"))
 }
 
+function getWebsiteCookie(driver) {
+    return new Promise(async resolve => resolve(await driver.executeScript("return document.cookie")))
+}
+
 function waitUntilWebsiteReady(driver, timeoutInSec) {
     return new Promise(resolve => {
 
@@ -35,5 +39,7 @@ function waitUntilWebsiteReady(driver, timeoutInSec) {
 
 module.exports = {
     isElementExists,
-    waitUntilWebsiteReady
+    waitUntilWebsiteReady,
+    getWebsiteCookie,
+    waitSync: second => new Promise(resolve => setTimeout(resolve, second * 1000))
 }
